@@ -30,8 +30,6 @@ export const fetchMediaList = (mid: string, tid: string, pn: number = 1, ps: num
     tid,
   });
 
-  console.log('fetch',  `https://api.bilibili.com/x/space/arc/search?${params}`)
-
   return fetch(
     `https://api.bilibili.com/x/space/arc/search?${params}`, {
       method: 'GET',

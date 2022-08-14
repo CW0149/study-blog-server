@@ -32,6 +32,7 @@ export const getMediaList = async (mid: string, tid: string) => {
     id: item.bvid,
     title: item.title,
     url: `https://www.bilibili.com/video/${item.bvid}`,
+    created: item.created,
   }));
 };
 
